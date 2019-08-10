@@ -72,7 +72,7 @@ function I = left_down_optimum_area_QHT(I, xa,ya,xb,yb,xc,yc,xd,yd)
         y1c = yc;
         x1d =  xd+n;
         y1d = yd;
-        disp('ok 1 ');
+%        disp('ok 1 ');
         
 %        disp(x1a);
 %        disp(y1a);

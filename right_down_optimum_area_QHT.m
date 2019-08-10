@@ -72,7 +72,7 @@ end
         y1c = yd+n;
         x1d =  xd;
         y1d = yd;
-        disp('ok 1 ');
+%        disp('ok 1 ');
         
 %        disp(x1a);
 %        disp(y1a);

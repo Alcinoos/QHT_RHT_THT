@@ -57,7 +57,7 @@ end
 %        disp(x0d);
 %        disp(y0d);
 %        disp('ok');
-         disp(Temp); 
+%         disp(Temp); 
          
  %for part 1        
         x1a = xa;

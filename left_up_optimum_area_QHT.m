@@ -2,12 +2,12 @@ function I = left_up_optimum_area_QHT(I, xa,ya,xb,yb,xc,yc,xd,yd)
     if ((xa<xb)&&(xd<xc)&&(ya<yd)&&(yb<yc))
         % affichage
         l = min([yd-ya, yc-yb,xb-xa, xc-xd]);
-       disp('l');
-       disp(l);
+%       disp('l');
+%       disp(l);
         p=floor(log2(l+1));
         n = floor(2^p);
-       disp('n');
-       disp(n);
+%       disp('n');
+%       disp(n);
         
         Temp = zeros(n);
         x0a = xa;
@@ -20,13 +20,13 @@ function I = left_up_optimum_area_QHT(I, xa,ya,xb,yb,xc,yc,xd,yd)
         end
         
 
-      disp('temp');
-       disp(Temp);
+ %     disp('temp');
+ %      disp(Temp);
         %[L, m , n] = Linearize(Temp);
         resTemp = QuantumHilbertTransform(Temp);
         
-       disp('restemp');
-       disp(resTemp);
+  %     disp('restemp');
+  %     disp(resTemp);
 %       resTemp = ULinearize(resTemp, m,n);
         %           disp('restemp');
         %disp(resTemp);      

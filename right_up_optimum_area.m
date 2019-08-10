@@ -2,15 +2,15 @@ function I = right_up_optimum_area(I, xa,ya,xb,yb,xc,yc,xd,yd)
     if ((xa<xb)&&(xd<xc)&&(ya<yd)&&(yb<yc))
         % affichage
         l = min([yd-ya, yc-yb,xb-xa, xc-xd]);
-        disp('l');
-        disp(l);
+%        disp('l');
+%        disp(l);
         p=floor(log2(l));
         n = floor(2^p);
-        disp('n');
-        disp(n);
+%        disp('n');
+%        disp(n);
         
         Temp = zeros(n);
-        disp('traitement');
+%        disp('traitement');
         x0b = xb;
         y0b = yb;
 
@@ -39,7 +39,7 @@ function I = right_up_optimum_area(I, xa,ya,xb,yb,xc,yc,xd,yd)
 %        disp(x0d);
 %        disp(y0d);
 %        disp('ok');
-         disp(Temp); 
+%         disp(Temp); 
          
  %for part 1        
         x1a = xa;

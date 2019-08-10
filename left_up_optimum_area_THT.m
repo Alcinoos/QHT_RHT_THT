@@ -56,7 +56,7 @@ function I = left_up_optimum_area_THT(I, xa,ya,xb,yb,xc,yc,xd,yd)
 %        disp(x0d);
 %        disp(y0d);
 %        disp('ok');
-         disp(Temp); 
+%         disp(Temp); 
          
  %for part 1        
         x1a = xa+n;

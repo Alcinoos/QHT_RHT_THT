@@ -4,12 +4,12 @@ function I = left_down_optimum_area_RHT(I, xa,ya,xb,yb,xc,yc,xd,yd)
     if ((xa<xb)&&(xd<xc)&&(ya<yd)&&(yb<yc))
         % affichage
         l = min([yd-ya, yc-yb,xb-xa, xc-xd]);
-        disp('l');
-        disp(l);
+  %      disp('l');
+   %     disp(l);
         p=floor(log2(l+1));
         n = floor(2^p);
-        disp('n');
-        disp(n);
+ %       disp('n');
+%        disp(n);
         
         Temp = zeros(n);
        
@@ -23,24 +23,24 @@ function I = left_down_optimum_area_RHT(I, xa,ya,xb,yb,xc,yc,xd,yd)
             end
         end
         
-        disp('temp');
-        disp(Temp);
+ %       disp('temp');
+  %      disp(Temp);
         [L, p , q] = Linearize(Temp);
         resTemp = RecursiveHilbertTransform(L,log2(n));
         
-        disp('restemp');
-        disp(resTemp);
+   %     disp('restemp');
+   %     disp(resTemp);
         resTemp = ULinearize(resTemp, p,q);
-                   disp('restemp');
-        disp(resTemp);      
+   %                disp('restemp');
+   %     disp(resTemp);      
          for i = 1:n
             for j = 1:n
                 I((y0d+1)-i,j+(x0d-1)) = resTemp(n-i+1,j);
             end
          end  
                  
-        disp('I eto');
-        disp(I);
+    %   disp('I eto');
+    %    disp(I);
         %%%% for part 0
 %         x0d = xd;
 %         y0d = yd;
@@ -72,7 +72,7 @@ function I = left_down_optimum_area_RHT(I, xa,ya,xb,yb,xc,yc,xd,yd)
         y1c = yc;
         x1d =  xd+n;
         y1d = yd;
-        disp('ok 1 ');
+  %      disp('ok 1 ');
         
 %        disp(x1a);
 %        disp(y1a);
